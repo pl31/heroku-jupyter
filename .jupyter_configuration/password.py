@@ -4,4 +4,4 @@ import IPython.lib
 
 c = get_config()
 c.NotebookApp.password = IPython.lib.passwd(
-    os.getenv('JUPYTER_PASSWORD'), default=str(uuid.uuid4()))
+    os.getenv('JUPYTER_PASSWORD', default=str(uuid.uuid4())))
