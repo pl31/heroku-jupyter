@@ -1,10 +1,10 @@
 # heroku-jupyter
 
-Example how to deploy (Jupyter Notebook)[https://jupyter.org/] to heroku. 
+Example how to deploy [Jupyter Notebook](https://jupyter.org/) to heroku. 
 Push this repository to your app or fork this repository on github and link your 
 repository to your heroku app.
 
-Use the (heroku-buildpack-conda)[https://github.com/p-a-c-o/heroku-buildpack-conda]:
+Use the [heroku-buildpack-conda](https://github.com/p-a-c-o/heroku-buildpack-conda):
 ```
 heroku buildpacks:set https://github.com/p-a-c-o/heroku-buildpack-conda.git -a <your_app>
 ```
