@@ -1,1 +1,3 @@
-ipython-notebook
+name: ipython-notebook
+dependencies:
+- ipython-notebook
