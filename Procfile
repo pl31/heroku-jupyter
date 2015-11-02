@@ -1,1 +1,1 @@
-web: jupyter notebook --no-browser --no-mathjax --ip=* --port \$PORT ./.jupyter_configuration/password.py
+web: jupyter notebook --no-browser --no-mathjax --ip=* --port \$PORT --config=./.jupyter_configuration/password.py notebooks
