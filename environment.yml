@@ -1,3 +1,5 @@
 name: ipython-notebook
 dependencies:
-- ipython-notebook
+  - ipython-notebook
+  - pgcontents
+  - requests
