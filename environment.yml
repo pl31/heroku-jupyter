@@ -2,6 +2,12 @@ name: ipython-notebook
 dependencies:
   - ipython-notebook
   - requests
+  # get dependencies for pgcontents
+  - certifi
+  - click
+  - mako
   - psycopg2
+  - six
+  - sqlalchemy
   - pip:
     - pgcontents
