@@ -3,5 +3,5 @@
 jupyter notebook \
 	--no-browser --no-mathjax --ip=* --port $PORT \
 	--config=.jupyter_config/passwd.py \
-	--config=.jupyter_config/pgcontents.py \
+	# --config=.jupyter_config/pgcontents.py \
 	notebooks
