@@ -14,13 +14,6 @@ To protect your notebooks a random password is used until you set the environmen
 heroku config:set JUPYTER_NOTEBOOK_PASSWORD=<your_passwd> -a <your_app>
 ```
 
-## pgcontents
+## Work in progress
 
-To store your notebooks, you can use pgcontents.
-
-First add an "Heroku Postgres" Add-On to your app.
-
-```
-pgcontents init --db-url $DATABASE_URL --no-prompt                                                                                    
-```                                                                                                                                       
-                                       
+... try to run another ContentsManger to store notebooks. 
