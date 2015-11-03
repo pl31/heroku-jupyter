@@ -1,5 +1,6 @@
 name: ipython-notebook
 dependencies:
+  - python=3.5
   - ipython-notebook
   - requests
   # get dependencies for pgcontents
@@ -9,5 +10,6 @@ dependencies:
   - psycopg2
   - six
   - sqlalchemy
-  - pip:
-    - pgcontents
+  # pgcontents messes up installation  
+  #- pip:
+  #  - pgcontents
