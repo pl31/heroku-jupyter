@@ -2,6 +2,6 @@ name: ipython-notebook
 dependencies:
   - ipython-notebook
   - requests
-  - sqlalchemy
+  - psycopg2
   - pip:
     - pgcontents
