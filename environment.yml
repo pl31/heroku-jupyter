@@ -3,13 +3,13 @@ dependencies:
   - python=3.5
   - ipython-notebook
   - requests
-  # get dependencies for pgcontents
-  - certifi
-  - click
-  - mako
-  - psycopg2
-  - six
-  - sqlalchemy
+  ## get dependencies for pgcontents
+  #- certifi
+  #- click
+  #- mako
+  #- psycopg2
+  #- six
+  #- sqlalchemy
   # pgcontents messes up installation  
   #- pip:
   #  - pgcontents
