@@ -1,7 +1,7 @@
 name: ipython-notebook
 dependencies:
   - python=3.5
-  - ipython-notebook
+  - notebook
   - requests
   ## get dependencies for pgcontents
   #- certifi
