@@ -1,0 +1,9 @@
+# Manifest for use in CloudFoundry
+---
+applications:
+- name: jupyter
+  memory: 512M
+  instances: 1
+  buildpack: https://github.com/p-a-c-o/heroku-buildpack-conda.git
+  random-route: true
+  command: ~/start_jupyter
