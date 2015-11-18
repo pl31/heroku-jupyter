@@ -1,5 +1,7 @@
 # heroku-jupyter
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 Example how to deploy [Jupyter Notebook](https://jupyter.org/) to heroku. 
 Push this repository to your app or fork this repository on github and link your 
 repository to your heroku app.
