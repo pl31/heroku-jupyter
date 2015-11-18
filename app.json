@@ -1,8 +1,7 @@
 {
+  "name": "jupyter",
+  "repository": ""https://github.com/p-a-c-o/heroku-jupyter",
   "buildpacks": [
-    { "url": "https://github.com/p-a-c-o/heroku-buildpack-conda.git" }
-  ],
-  "env": {
-    "BUILDPACK_URL": "https://github.com/p-a-c-o/heroku-buildpack-conda.git"
-  }
+    { "url": "https://github.com/p-a-c-o/heroku-buildpack-conda" }
+  ]
 }
