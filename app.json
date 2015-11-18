@@ -3,5 +3,8 @@
     {
       "url": "https://github.com/p-a-c-o/heroku-buildpack-conda.git"
     }
-  ]
+  ],
+  "env": {
+    "BUILDPACK_URL": "https://github.com/p-a-c-o/heroku-buildpack-conda.git"
+  }
 }
