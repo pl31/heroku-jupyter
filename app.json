@@ -1,0 +1,7 @@
+{
+  "buildpacks": [
+    {
+      "url": "https://github.com/p-a-c-o/heroku-buildpack-conda"
+    }
+  ]
+}
