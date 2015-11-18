@@ -9,5 +9,5 @@ dependencies:
   - psycopg2
   - six
   - sqlalchemy
-  - pip:
-    - pgcontents
+  #- pip:
+  #  - pgcontents
