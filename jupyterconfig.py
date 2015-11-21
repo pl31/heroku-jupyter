@@ -1,7 +1,7 @@
 import os
 import uuid
 import IPython.lib
-import PostgresContentsManager
+import pgcontents
 
 c = get_config()
 
