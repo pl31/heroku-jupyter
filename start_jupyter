@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
+pgcontents init -l $DATABASE_URL --no-prompt
+
 jupyter notebook \
 	--no-browser --no-mathjax --ip=* --port $PORT \
 	--config=.jupyter_config/password.py \
+	--config=.jupyter_config/pgcontents.py \
 	notebooks
-
-#	--config=.jupyter_config/pgcontents.py \
