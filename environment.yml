@@ -1,6 +1,7 @@
 name: ipython-notebook
 dependencies:
   - notebook
+  - ipywidgets
   - requests
   # get dependencies for pgcontents
   - certifi
@@ -10,5 +11,4 @@ dependencies:
   - six
   - sqlalchemy
   - pip:
-  #  - pgcontents
     - git+git://github.com/p-a-c-o/pgcontents.git

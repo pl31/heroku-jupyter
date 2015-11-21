@@ -2,5 +2,8 @@
   "name": "jupyter",
   "buildpacks": [
     { "url": "https://github.com/p-a-c-o/heroku-buildpack-conda" }
+  ],
+  "addons": [
+    "heroku-postgresql:hobby-dev"
   ]
 }
