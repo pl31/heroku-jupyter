@@ -1,10 +1,17 @@
 import os
-from pgcontents import PostgresContentsManager
+import uuid
+import IPython.lib
+import PostgresContentsManager
 
 c = get_config()
 
+### Password protection ###
+c.NotebookApp.password = IPython.lib.passwd(
+    os.getenv('JUPYTER_NOTEBOOK_PASSWORD', default=str(uuid.uuid4())))
+
+### PostresContentsManager ###
 # Tell IPython to use PostgresContentsManager for all storage.
-c.NotebookApp.contents_manager_class = PostgresContentsManager
+c.NotebookApp.contents_manager_class = pgcontents.PostgresContentsManager
 
 # Set the url for the database used to store files.  See
 # http://docs.sqlalchemy.org/en/rel_0_9/core/engines.html#postgresql
