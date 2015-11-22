@@ -11,4 +11,4 @@ dependencies:
   - six
   - sqlalchemy
   - pip:
-    - git+git://github.com/p-a-c-o/pgcontents.git
+    - git+git://github.com/pl31/pgcontents.git
