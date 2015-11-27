@@ -14,6 +14,8 @@ If you want to customize your app, easiest is to fork this repository.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
+If you forked this repository, you can link it to your heroku app afterwards.
+
 ### heroku - manual deployment
 
 Push this repository to your app or fork this repository on github and link your 
