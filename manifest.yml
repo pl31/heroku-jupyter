@@ -7,3 +7,6 @@ applications:
   buildpack: https://github.com/p-a-c-o/heroku-buildpack-conda.git
   random-route: true
   command: ~/start_jupyter
+  services:
+  # enforce a postgres database
+  - jupyter-db
