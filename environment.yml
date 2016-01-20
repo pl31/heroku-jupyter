@@ -11,4 +11,4 @@ dependencies:
   - six
   - sqlalchemy
   - pip:
-    - git+git://github.com/quantopian/pgcontents.git
+    - git+git://github.com/quantopian/pgcontents.git#1513437
