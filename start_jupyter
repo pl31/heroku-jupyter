@@ -2,6 +2,9 @@
 
 pgcontents init -l $DATABASE_URL --no-prompt
 
+# HACK: run pip install for extensions
+pip install git+git://github.com/ipython-contrib/IPython-notebook-extensions.git
+
 jupyter notebook \
 	--no-browser --no-mathjax --ip=* --port $PORT \
 	--config=jupyterconfig.py \
