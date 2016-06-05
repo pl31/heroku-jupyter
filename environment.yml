@@ -2,15 +2,15 @@ name: ipython-notebook
 dependencies:
   - notebook
   - ipywidgets
-#  - requests
+  - requests
   # get dependencies for pgcontents
-#  - certifi
-#  - click
-#  - mako
-#  - psycopg2
-#  - six
-#  - sqlalchemy
-#  - nose
+  - certifi
+  - click
+  - mako
+  - psycopg2
+  - six
+  - sqlalchemy
+  - nose
   # get dependencies for extensions
   - psutil
 #  - pip:
