@@ -14,6 +14,7 @@ dependencies:
   # get dependencies for extensions
   - psutil
   - pyqt
+  - jupyter
   - pip:
     - git+git://github.com/pl31/pgcontents.git
 #    - git+git://github.com/ipython-contrib/IPython-notebook-extensions.git
