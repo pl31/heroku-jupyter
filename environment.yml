@@ -1,16 +1,16 @@
 name: ipython-notebook
 dependencies:
   - notebook
-  - ipywidgets
-  - requests
+#  - ipywidgets
+#  - requests
   # get dependencies for pgcontents
-  - certifi
-  - click
-  - mako
-  - psycopg2
-  - six
-  - sqlalchemy
-  - nose
+#  - certifi
+#  - click
+#  - mako
+#  - psycopg2
+#  - six
+#  - sqlalchemy
+#  - nose
   - pip:
-    - git+git://github.com/pl31/pgcontents.git
+#    - git+git://github.com/pl31/pgcontents.git
     - git+git://github.com/ipython-contrib/IPython-notebook-extensions.git
