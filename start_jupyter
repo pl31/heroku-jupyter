@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-pgcontents init -l $DATABASE_URL --no-prompt
+#pgcontents init -l $DATABASE_URL --no-prompt
 
 # HACK: run install for nbextensions
 #pip install git+git://github.com/ipython-contrib/IPython-notebook-extensions.git
