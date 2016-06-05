@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-#pgcontents init -l $DATABASE_URL --no-prompt
+pgcontents init -l $DATABASE_URL --no-prompt
 
 # HACK: run install for nbextensions
-#pip install git+git://github.com/ipython-contrib/IPython-notebook-extensions.git
-conda install -y -c jochym nbextensions=master
+pip install git+git://github.com/ipython-contrib/IPython-notebook-extensions.git
+#conda install -y -c jochym nbextensions=master
 
 jupyter notebook \
 	--no-browser --no-mathjax --ip=* --port $PORT \
