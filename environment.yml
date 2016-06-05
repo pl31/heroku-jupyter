@@ -13,6 +13,6 @@ dependencies:
 #  - nose
   # get dependencies for extensions
   - psutil
-  - pip:
+#  - pip:
 #    - git+git://github.com/pl31/pgcontents.git
-    - git+git://github.com/ipython-contrib/IPython-notebook-extensions.git
+#    - git+git://github.com/ipython-contrib/IPython-notebook-extensions.git
