@@ -7,7 +7,7 @@ try:
 
     ### Password protection ###
     c.NotebookApp.password = IPython.lib.passwd(
-        os.getenv('JUPYTER_NOTEBOOK_PASSWORD'))
+        os.getenv('JUPYTER_NOTEBOOK_PASSWORD')
 
     import pgcontents
 
