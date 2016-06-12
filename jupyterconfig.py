@@ -1,15 +1,14 @@
-import os
-import traceback
-import IPython.lib
-
 try:
+    import os
+    import traceback
+    import IPython.lib
+    import pgcontents
+
     c = get_config()
 
     ### Password protection ###
-    c.NotebookApp.password = IPython.lib.passwd(
-        os.getenv('JUPYTER_NOTEBOOK_PASSWORD')
-
-    import pgcontents
+    passwd = os.getenv('JUPYTER_NOTEBOOK_PASSWORD')
+    c.NotebookApp.password = IPython.lib.passwd(passwd)
 
     ### PostresContentsManager ###
     database_url = os.getenv('DATABASE_URL', None)
