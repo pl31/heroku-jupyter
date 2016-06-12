@@ -7,7 +7,7 @@ try:
     c = get_config()
 
     ### Password protection ###
-    passwd = os.getenv('JUPYTER_NOTEBOOK_PASSWORD')
+    passwd = os.environ['JUPYTER_NOTEBOOK_PASSWORD']
     c.NotebookApp.password = IPython.lib.passwd(passwd)
 
     ### PostresContentsManager ###
