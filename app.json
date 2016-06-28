@@ -1,7 +1,7 @@
 {
   "name": "jupyter",
   "buildpacks": [
-    { "url": "https://github.com/jakirkham/heroku-buildpack-conda/archive/run_activation_scripts.zip" }
+    { "url": "https://github.com/jakirkham/heroku-buildpack-conda.git#run_activation_scripts" }
   ],
   "env": {
     "JUPYTER_NOTEBOOK_PASSWORD": {
