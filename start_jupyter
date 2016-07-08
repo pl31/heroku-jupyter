@@ -6,6 +6,6 @@ URI=`echo $VCAP_APPLICATION | jq -r .uris[]`
 jupyter notebook \
 	--no-browser --no-mathjax --ip=* --port $PORT \
 	--config=jupyterconfig.py \
-  --NotebookApp.allow_origin=https://${URI} \
-  --NotebookApp.websocket_url=wss://${URI}:4443 \
+	--NotebookApp.allow_origin=https://${URI} \
+	--NotebookApp.websocket_url=wss://${URI}:4443 \
 	notebooks
