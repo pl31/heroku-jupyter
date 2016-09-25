@@ -1,6 +1,6 @@
 # heroku-jupyter
 
-Use this application to deploy [Jupyter Notebook](https://jupyter.org/) to heroku or CloudFoundry. If a postres database is available, [pgcontents](https://github.com/quantopian/pgcontents) is used as notebook storage.
+Use this application to deploy [Jupyter Notebook](https://jupyter.org/) to heroku or CloudFoundry. If a postgres database is available, [pgcontents](https://github.com/quantopian/pgcontents) is used as notebook storage.
 
 ## Quick start
 
@@ -35,8 +35,9 @@ $ heroku config:set JUPYTER_NOTEBOOK_PASSWORD=<your_passwd> -a <your_app>
 ### CloudFoundry
 
 - Clone this repository
-- Create a postgres database with name `jupyter-db`
+- Create a postgres database service with name `jupyter-db`
 - Deploy using `cf push`
+- Set `JUPYTER_NOTEBOOK_PASSWORD` using `cf set-env`. Do not forget to restart application.
 
 ## Python version
 
