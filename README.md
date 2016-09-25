@@ -37,3 +37,14 @@ $ heroku config:set JUPYTER_NOTEBOOK_PASSWORD=<your_passwd> -a <your_app>
 - Clone this repository
 - Create a postgres database with name `jupyter-db`
 - Deploy using `cf push`
+
+## Python version
+
+If you want to use a special python version, you should set it in your environment.yml:
+
+```
+name: root
+dependencies:
+  - python=2.7
+  - ...
+```
