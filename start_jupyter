@@ -2,9 +2,6 @@
 
 pgcontents init -l $DATABASE_URL --no-prompt
 
-mkdir -p /app/.jupyter
-cp jupyterconfig.py /app/.jupyter/jupyter_notebook_config.py
-
 jupyter contrib nbextension install --user
 jupyter nbextensions_configurator enable --user
 
