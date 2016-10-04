@@ -8,8 +8,9 @@ try:
     c = get_config()
 
     ### Password protection ###
-    passwd = os.environ['JUPYTER_NOTEBOOK_PASSWORD']
-    c.NotebookApp.password = IPython.lib.passwd(passwd)
+    if os.environ.get('JUPYTER_NOTBOOK_PASSWORD_DISABLED') != 'DangerZone!':
+        passwd = os.environ['JUPYTER_NOTEBOOK_PASSWORD']
+        c.NotebookApp.password = IPython.lib.passwd(passwd)
 
     ### PostresContentsManager ###
     database_url = os.getenv('DATABASE_URL', None)
@@ -36,7 +37,6 @@ try:
     if vcap_application_json:
         vcap_application = json.loads(vcap_application_json)
         uri = vcap_application['uris'][0]
-        c.NotebookApp.trust_xheaders = True
         c.NotebookApp.allow_origin = 'https://{}'.format(uri)
         c.NotebookApp.websocket_url = 'wss://{}:4443'.format(uri)
 
