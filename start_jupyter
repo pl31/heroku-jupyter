@@ -7,4 +7,5 @@ jupyter nbextensions_configurator enable --user
 
 jupyter notebook \
 	--no-browser --no-mathjax --ip=* --port $PORT \
+	$JUPYTER_NOTEBOOK_ARGS \
 	notebooks
