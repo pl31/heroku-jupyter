@@ -1,6 +1,9 @@
 # heroku-jupyter
 
-Use this application to deploy [Jupyter Notebook](https://jupyter.org/) to heroku or CloudFoundry. If a postres database is available, [pgcontents](https://github.com/quantopian/pgcontents) is used as notebook storage.
+Use this application to deploy [Jupyter Notebook](https://jupyter.org/) to
+heroku or CloudFoundry. If a postgres database is available,
+[pgcontents](https://github.com/quantopian/pgcontents) is used as notebook
+storage.
 
 ## Quick start
 
@@ -27,16 +30,29 @@ Use the [heroku-buildpack-conda](https://github.com/p-a-c-o/heroku-buildpack-con
 $ heroku buildpacks:set https://github.com/p-a-c-o/heroku-buildpack-conda.git -a <your_app>
 ```
 
-To protect your notebooks a random password is used until you set the environment variable `JUPYTER_NOTEBOOK_PASSWORD`:
+Jupyter notebook will not start until the environment variable
+`JUPYTER_NOTEBOOK_PASSWORD` is set. Use a good password:
 ```
 $ heroku config:set JUPYTER_NOTEBOOK_PASSWORD=<your_passwd> -a <your_app>
 ```
 
+If you are really sure, that you do not want a password protected notebook
+server, you can set `JUPYTER_NOTEBOOK_PASSWORD_DISABLED` to `DangerZone!`.
+
 ### CloudFoundry
 
 - Clone this repository
-- Create a postgres database with name `jupyter-db`
+- Create a postgres database service with name `jupyter-db`
 - Deploy using `cf push`
+- Set `JUPYTER_NOTEBOOK_PASSWORD` using `cf set-env`. Do not forget to restart application.
+
+## Environment variables
+
+- `JUPYTER_NOTEBOOK_PASSWORD`: Set password for notebooks
+- `JUPYTER_NOTEBOOK_PASSWORD_DISABLED`: Set to `DangerZone!` to disable password
+  protection
+- `JUPYTER_NOTEBOOK_ARGS`: Additional command line args passed to
+  `jupyter notebook`; e.g. get a more verbose logging using `--debug`
 
 ## Python version
 
