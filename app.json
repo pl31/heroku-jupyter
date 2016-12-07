@@ -1,7 +1,7 @@
 {
   "name": "jupyter",
   "buildpacks": [
-    { "url": "https://github.com/pl31/heroku-buildpack-conda" }
+    { "url": "https://github.com/pl31/heroku-buildpack-conda.git" }
   ],
   "env": {
     "JUPYTER_NOTEBOOK_PASSWORD": {
