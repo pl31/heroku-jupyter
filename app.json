@@ -6,12 +6,11 @@
   "env": {
     "JUPYTER_NOTEBOOK_PASSWORD": {
       "description": "IMPORTANT! Set a secure password.",
-      "value": null
     },
     "JUPYTER_NOTEBOOK_ARGS": {
       "description": "Additional command line arguments.",
       "required": false,
-      "value": null
+      "value": ""
     }
   },
   "addons": [
