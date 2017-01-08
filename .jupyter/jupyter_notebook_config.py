@@ -8,7 +8,7 @@ try:
     c = get_config()
 
     ### Password protection ###
-    if os.environ.get('JUPYTER_NOTBOOK_PASSWORD_DISABLED') != 'DangerZone!':
+    if os.environ.get('JUPYTER_NOTEBOOK_PASSWORD_DISABLED') != 'DangerZone!':
         passwd = os.environ['JUPYTER_NOTEBOOK_PASSWORD']
         c.NotebookApp.password = IPython.lib.passwd(passwd)
 
