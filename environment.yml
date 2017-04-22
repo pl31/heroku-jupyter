@@ -4,5 +4,5 @@ dependencies:
   - notebook
   - ipywidgets
   - pip:
-    - pgcontents
+    - git+git://github.com/pl31/pgcontents.git
     - jupyter_contrib_nbextensions
