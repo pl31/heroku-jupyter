@@ -3,6 +3,8 @@ dependencies:
   - notebook
   - ipywidgets
   - requests
+  # bind ipython version (compatibility to pgcontents)
+  - ipython = 5
   # get dependencies for pgcontents
   - certifi
   - click
