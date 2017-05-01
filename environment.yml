@@ -3,8 +3,6 @@ dependencies:
   - notebook
   - ipywidgets
   - requests
-  # bind ipython version (compatibility to pgcontents)
-  - ipython = 5
   # get dependencies for pgcontents
   - certifi
   - click
@@ -14,5 +12,5 @@ dependencies:
   - sqlalchemy
   - nose
   - pip:
-    - git+git://github.com/zackives/pgcontents.git#744f642
+    - git+git://github.com/pl31/pgcontents.git
     - git+git://github.com/ipython-contrib/jupyter_contrib_nbextensions.git
