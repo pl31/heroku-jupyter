@@ -4,7 +4,7 @@ dependencies:
   - ipywidgets
   - requests
   # bind ipython version (compatibility to pgcontents)
-  - ipython = 5
+  - ipython = 4
   # get dependencies for pgcontents
   - certifi
   - click
