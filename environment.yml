@@ -1,6 +1,6 @@
 name: ipython-notebook
 dependencies:
-  - notebook
+  - notebook = 4
   - ipywidgets
   - requests
   # bind ipython version (compatibility to pgcontents)
