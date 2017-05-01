@@ -6,7 +6,6 @@ dependencies:
   # bind ipython version (compatibility to pgcontents)
   - ipython = 5
   # get dependencies for pgcontents
-  - alembic
   - certifi
   - click
   - mako
@@ -15,5 +14,6 @@ dependencies:
   - sqlalchemy
   - nose
   - pip:
+    - alembic
     - git+git://github.com/pl31/pgcontents.git
     - git+git://github.com/ipython-contrib/jupyter_contrib_nbextensions.git
