@@ -1,6 +1,6 @@
 name: ipython-notebook
 dependencies:
-  - notebook = 4
+  - notebook
   - ipywidgets
   - requests
   # bind ipython version (compatibility to pgcontents)
@@ -14,6 +14,5 @@ dependencies:
   - sqlalchemy
   - nose
   - pip:
-    - alembic
-    - git+git://github.com/pl31/pgcontents.git
+    - git+git://github.com/zackives/pgcontents.git#744f642
     - git+git://github.com/ipython-contrib/jupyter_contrib_nbextensions.git
