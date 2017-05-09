@@ -5,10 +5,8 @@ heroku or CloudFoundry. If a postgres database is available,
 [pgcontents](https://github.com/quantopian/pgcontents) is used as notebook
 storage.
 
-<aside class="warning">
-2017-05-09: Due to changes in the ContentsManager interface, the notebook store does not work properly.
-Saving documents is broken.
-</aside>
+**2017-05-09: Due to changes in the ContentsManager interface, the notebook store 
+does not work properly. Saving documents is broken.**
 
 ## Quick start
 
