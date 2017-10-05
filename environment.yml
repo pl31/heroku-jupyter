@@ -12,4 +12,4 @@ dependencies:
   - sqlalchemy
   - nose
   - pip:
-    - git+git://github.com/pl31/pgcontents.git
+    - pgcontents
