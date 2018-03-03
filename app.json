@@ -11,6 +11,11 @@
       "description": "Additional command line arguments.",
       "required": false,
       "value": ""
+    },
+    "ENVIRONMENT_YML_PATH": {
+      "description": "Alternative environment.yml path.",
+      "required": false,
+      "value": ""
     }
   },
   "addons": [
