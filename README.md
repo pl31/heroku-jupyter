@@ -67,8 +67,6 @@ dependencies:
 
 ## Environments
 
-### Python 3
-
 | Deployment | Features | Description |
 | ---------- | -------- | ----------- |
 | [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?env[ENVIRONMENT_YML]=environments/default.yml) | Python3, IPython5 | Default Environment
