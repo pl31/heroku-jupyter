@@ -69,7 +69,7 @@ dependencies:
 
 *Experimental feature - in work*
 
-- Parametrize default environment using ENVIRNMENT_YML
+- Parametrize default environment using ENVIRONMENT_YML
 - Add additional kernel(s) to jupyter installation (Python2 and Python3 in parallel)
 - Allow changes and experimental features without damaging defult configuration
 
