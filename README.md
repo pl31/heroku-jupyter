@@ -67,6 +67,12 @@ dependencies:
 
 ## Environments
 
+*Experimental feature - in work*
+
+- Parametrize default environment using ENVIRNMENT_YML
+- Add additional kernel(s) to jupyter installation (Python2 and Python3 in parallel)
+- Allow changes and experimental features without damaging defult configuration
+
 | Deployment | Features | Description |
 | ---------- | -------- | ----------- |
 | [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?env[ENVIRONMENT_YML]=environments/default.yml) | Python3, IPython5 | Default Environment
