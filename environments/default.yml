@@ -1,4 +1,4 @@
-name: heroku-jupyter
+name: root
 dependencies:
   # bind notebook version (compatibility to pgcontents)
   - notebook = 4

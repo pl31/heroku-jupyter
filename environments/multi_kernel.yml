@@ -1,8 +1,8 @@
-name: heroku-jupyter
+name: root
 dependencies:
-  - python=2.7
   # bind notebook version (compatibility to pgcontents)
   - notebook = 4
+  - nb_conda_kernels
   - ipywidgets
   - requests
   # bind ipython version (compatibility to pgcontents)

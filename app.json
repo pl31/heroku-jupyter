@@ -12,8 +12,13 @@
       "required": false,
       "value": ""
     },
-    "ENVIRONMENT_YML_PATH": {
+    "ENVIRONMENT_YML": {
       "description": "Alternative environment.yml path.",
+      "required": false,
+      "value": ""
+    },
+    "ADDITIONAL_ENVIRONMENT_YML": {
+      "description": "Additional environment.yml path.",
       "required": false,
       "value": ""
     }
