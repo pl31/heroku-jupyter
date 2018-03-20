@@ -1,3 +1,4 @@
 name: Python2
 dependencies:
   - python=2.7
+  - ipykernel
