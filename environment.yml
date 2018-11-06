@@ -8,6 +8,7 @@ dependencies:
   - ipython = 5
   # bind tornado version (websocket problems)
   - tornado = 4.5
+  - gensim
  # get dependencies for pgcontents
   - certifi
   - click
