@@ -9,4 +9,3 @@ applications:
   command: ~/start_jupyter
   services:
   # enforce a postgres database
-  - jupyter-db
