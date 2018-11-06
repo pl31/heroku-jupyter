@@ -8,3 +8,14 @@ dependencies:
   - ipython = 5
   # bind tornado version (websocket problems)
   - tornado = 4.5
+ # get dependencies for pgcontents
+  - certifi
+  - click
+  - cryptography 
+  - mako
+  - psycopg2
+  - six
+  - sqlalchemy
+  - nose
+  - pip:
+    - pgcontents
