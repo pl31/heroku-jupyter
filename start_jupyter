@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-conda install jupyter=4
+conda install notebook=4
 
 pgcontents init -l $DATABASE_URL --no-prompt
 
