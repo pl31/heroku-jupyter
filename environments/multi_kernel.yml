@@ -1,7 +1,7 @@
 name: root
 dependencies:
   # bind notebook version (compatibility to pgcontents)
-  - jupyter = 4
+  - notebook = 4
   - nb_conda_kernels
   - ipywidgets
   - requests
