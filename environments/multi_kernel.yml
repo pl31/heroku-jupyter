@@ -18,5 +18,5 @@ dependencies:
   - nose
   - pip:
     - pgcontents
-    - notebook = 4
+    - notebook == 4
     - git+git://github.com/ipython-contrib/jupyter_contrib_nbextensions.git
