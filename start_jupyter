@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-conda install notebook=4
-
 pgcontents init -l $DATABASE_URL --no-prompt
 
 jupyter contrib nbextension install --user
