@@ -4,7 +4,7 @@ dependencies:
   - notebook
   - ipywidgets
   - requests
-  - ipython = 6
+  - ipython = 5
   - tornado
   # get dependencies for pgcontents
   - sqlalchemy
