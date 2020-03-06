@@ -10,7 +10,7 @@ dependencies:
   - click
   - cryptography 
   - mako
-  - psycopg2
+  - psycopg2-binary
   - six
   - sqlalchemy
   - nose
