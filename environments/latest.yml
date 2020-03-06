@@ -12,6 +12,6 @@ dependencies:
   - cryptography 
   - six
   - pip:
-    - pgcontents
+    - pgcontents = 0.5.3
     - psycopg2-binary
     - git+git://github.com/ipython-contrib/jupyter_contrib_nbextensions.git
