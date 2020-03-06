@@ -1,9 +1,10 @@
 name: root
 dependencies:
+  - pip
   - notebook
   - ipywidgets
   - requests
-  - ipython
+  - ipython = 6
   - tornado
   # get dependencies for pgcontents
   - sqlalchemy
