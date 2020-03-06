@@ -76,4 +76,5 @@ dependencies:
 | Deployment | Features | Description |
 | ---------- | -------- | ----------- |
 | [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?env[ENVIRONMENT_YML]=environments/default.yml) | Python3, IPython5 | Default Environment
+| [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?env[ENVIRONMENT_YML]=environments/latest.yml) | Python3 | Latest, no version binding
 | [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?env[ENVIRONMENT_YML]=environments/multi_kernel.yml&env[ADDITIONAL_ENVIRONMENT_YML]=environments/kernel/python2/python2.yml) | Python3, IPython5 + Python2 | Default Environment + Python2
