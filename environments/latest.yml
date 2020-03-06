@@ -6,14 +6,12 @@ dependencies:
   - ipython
   - tornado
   # get dependencies for pgcontents
-  - certifi
+  - sqlalchemy
+  - alembic
   - click
   - cryptography 
-  - mako
-  - psycopg-binary
   - six
-  - sqlalchemy
-  - nose
   - pip:
     - pgcontents
+    - psycopg2-binary
     - git+git://github.com/ipython-contrib/jupyter_contrib_nbextensions.git
