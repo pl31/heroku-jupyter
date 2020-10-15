@@ -1,5 +1,15 @@
 # heroku-jupyter
 
+*Currently none of the configurations work properly.
+I am not able to figure out a working environment.yml.
+Sad enough older configurations do not work, as deprecated
+packages have been removed from package repositories.*
+
+*Instead of using anaconda, it might be more stable to create
+a docker container to run in heroku. See as an example
+[heroku-debian-jupyter](https://github.com/pl31/heroku-debian-jupyter),
+but there is still no support for a heroku deploy button from heroku*
+
 Use this application to deploy [Jupyter Notebook](https://jupyter.org/) to
 heroku or CloudFoundry. If a postgres database is available,
 [pgcontents](https://github.com/quantopian/pgcontents) is used as notebook
