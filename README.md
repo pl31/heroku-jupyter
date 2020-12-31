@@ -1,26 +1,26 @@
 # heroku-jupyter
 
-*Currently none of the configurations work properly.
-I am not able to figure out a working environment.yml.
-Sad enough older configurations do not work, as deprecated
-packages have been removed from package repositories.*
+*В настоящее время ни одна из конфигураций не работает должным образом.
+Я не могу понять рабочий environment.yml.
+К сожалению, старые конфигурации не работают, поскольку устарели
+пакеты были удалены из пакета repositories.*
 
-*Instead of using anaconda, it might be more stable to create
-a docker container to run in heroku. See as an example
+* Вместо использования анаконды было бы более стабильно создать
+контейнер докеров для запуска в Heroku. См. Пример
 [heroku-debian-jupyter](https://github.com/pl31/heroku-debian-jupyter),
-but there is still no support for a heroku deploy button from heroku*
+но по-прежнему нет поддержки кнопки развертывания heroku из heroku*
 
-Use this application to deploy [Jupyter Notebook](https://jupyter.org/) to
-heroku or CloudFoundry. If a postgres database is available,
-[pgcontents](https://github.com/quantopian/pgcontents) is used as notebook
-storage.
+Используйте это приложение для развертывания[Jupyter Notebook](https://jupyter.org/) to
+heroku or CloudFoundry. Если доступна база данных postgres,
+[pgcontents](https://github.com/quantopian/pgcontents) используется как ноутбук
+место хранения.
 
 ## Quick start
 
-Jupyter will not start, if the environment variable `JUPYTER_NOTEBOOK_PASSWORD`
-was not set.
+Jupyter не запустится, если переменная окружения `JUPYTER_NOTEBOOK_PASSWORD`
+не было установлено.
 
-If you want to customize your app, easiest is to fork this repository.
+Если вы хотите настроить свое приложение, проще всего создать форк этого репозитория.
 
 ## Installation instructions
 
@@ -28,45 +28,45 @@ If you want to customize your app, easiest is to fork this repository.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-If you forked this repository, you can link it to your heroku app afterwards.
+Если вы форкнули этот репозиторий, вы можете впоследствии связать его со своим приложением heroku.
 
 ### heroku - manual deployment
 
-Push this repository to your app or fork this repository on github and link your
-repository to your heroku app.
+Загрузите этот репозиторий в свое приложение или создайте форк этого репозитория на github и свяжите свой
+репозиторий в ваше приложение heroku.
 
-Use the [heroku-buildpack-conda](https://github.com/pl31/heroku-buildpack-conda):
+Использовать [heroku-buildpack-conda](https://github.com/pl31/heroku-buildpack-conda):
 ```
 $ heroku buildpacks:set https://github.com/pl31/heroku-buildpack-conda.git -a <your_app>
 ```
 
-Jupyter notebook will not start until the environment variable
-`JUPYTER_NOTEBOOK_PASSWORD` is set. Use a good password:
+Блокнот Jupyter не запустится, пока не будет указана переменная среды
+`JUPYTER_NOTEBOOK_PASSWORD` установлен. Используйте хороший пароль:
 ```
 $ heroku config:set JUPYTER_NOTEBOOK_PASSWORD=<your_passwd> -a <your_app>
 ```
 
-If you are really sure, that you do not want a password protected notebook
-server, you can set `JUPYTER_NOTEBOOK_PASSWORD_DISABLED` to `DangerZone!`.
+Если вы действительно уверены, что вам не нужен защищенный паролем блокнот
+сервер, вы можете установить `JUPYTER_NOTEBOOK_PASSWORD_DISABLED` to `DangerZone!`.
 
 ### CloudFoundry
 
-- Clone this repository
-- Create a postgres database service with name `jupyter-db`
-- Deploy using `cf push`
-- Set `JUPYTER_NOTEBOOK_PASSWORD` using `cf set-env`. Do not forget to restart application.
+- Клонировать этот репозиторий
+- Создайте службу базы данных postgres с именем `jupyter-db`
+- Развернуть с помощью `cf push`
+- Набор `JUPYTER_NOTEBOOK_PASSWORD` с помощью`cf set-env`. Не забудьте перезапустить приложение.
 
 ## Environment variables
 
-- `JUPYTER_NOTEBOOK_PASSWORD`: Set password for notebooks
+- `JUPYTER_NOTEBOOK_PASSWORD`: Установить пароль для записных книжек
 - `JUPYTER_NOTEBOOK_PASSWORD_DISABLED`: Set to `DangerZone!` to disable password
   protection
-- `JUPYTER_NOTEBOOK_ARGS`: Additional command line args passed to
-  `jupyter notebook`; e.g. get a more verbose logging using `--debug`
+- `JUPYTER_NOTEBOOK_ARGS`: Дополнительные аргументы командной строки переданы в
+  `jupyter notebook`; e.g. получить более подробный журнал, используя `--debug`
 
 ## Python version
 
-If you want to use a special python version, you should set it in your environment.yml:
+Если вы хотите использовать специальную версию Python, вы должны установить ее в своем environment.yml:
 
 ```
 name: root
@@ -77,11 +77,11 @@ dependencies:
 
 ## Environments
 
-*Experimental feature - in work*
+*Экспериментальная функция - в работе*
 
-- Parametrize default environment using ENVIRONMENT_YML
-- Add additional kernel(s) to jupyter installation (Python2 and Python3 in parallel)
-- Allow changes and experimental features without damaging defult configuration
+- Параметризация среды по умолчанию с помощью ENVIRONMENT_YML
+- Добавить дополнительное ядро ​​в установку jupyter(Python2 и Python3 в параллели)
+- Разрешить изменения и экспериментальные функции без повреждения конфигурации по умолчанию
 
 | Deployment | Features | Description |
 | ---------- | -------- | ----------- |
