@@ -8,5 +8,5 @@ applications:
   random-route: true
   command: ~/start_jupyter
   services:
-  # enforce a postgres database
+  # обеспечить соблюдение базы данных postgres
   - jupyter-db
