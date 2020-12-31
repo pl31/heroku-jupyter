@@ -1,7 +1,7 @@
 name: root
 dependencies:
   - pip
-  # bind notebook version (compatibility to pgcontents)
+  # привязать версию ноутбука (совместимость с pgcontents)
   - notebook = 4
   - ipywidgets
   - requests

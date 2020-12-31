@@ -1,3 +1,4 @@
 {
-  "python.pythonPath": "/home/quest/.local/bin/python3"
+  "python.pythonPath": "/home/quest/.local/bin/python3",
+  "git.autofetch": true
 }
